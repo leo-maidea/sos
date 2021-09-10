@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('react-native-fs');
 const updater = require('./updater');
 const countriesData = require('../data/country_data.json');
 let numbersData = require('../data/numbers_data.json');

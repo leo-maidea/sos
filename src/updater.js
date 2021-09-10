@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('react-native-fs');
 const https = require('https');
 
 exports.download = async (url, filePath) => new Promise((resolve, reject) => {
