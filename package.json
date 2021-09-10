@@ -1,7 +1,7 @@
 {
-  "name": "sos",
+  "name": "sos-numbers",
   "version": "2.0.0",
-  "description": "Worldwide Emergency Services Numbers, with self-updater",
+  "description": "Worldwide Emergency Services Numbers database",
   "main": "./src/index.js",
   "scripts": {
     "test": "mocha",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zaydme/sos.git"
+    "url": "git+https://github.com/leo-maidea/sos-numbers.git"
   },
   "keywords": [
     "sos",
@@ -24,15 +24,12 @@
   "author": "911AKA911 <its911aka911@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Zaydme/sos/issues"
+    "url": "https://github.com/leo-maidea/sos-numbers/issues"
   },
-  "homepage": "https://github.com/Zaydme/sos#readme",
+  "homepage": "https://github.com/leo-maidea/sos-numbers#readme",
   "devDependencies": {
     "chai": "^4.1.2",
     "eslint": "^5.16.0",
     "mocha": "^6.1.3"
-  },
-  "dependencies": {
-    "react-native-fs": "^2.18.0"
   }
 }

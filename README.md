@@ -6,18 +6,20 @@
 
 ![logo](https://i.imgur.com/cT0QPzY.png)
 # SOS
-Worldwide Emergency Services Numbers, with self-updater.
+Worldwide Emergency Services Numbers, without self-updater.
+
+Just a fork of https://github.com/Zaydme/sos with removed self-updater (compatible with react-native)
 
 
 #### Installing
 
 ```
-npm install sos
+npm install sos-numbers
 ```
 
 ### Usage
 ```js
-const sos = require('sos');
+const sos = require('sos-numbers');
 
 // .countryInfo('ISO_code') gives you details about the country
 console.log('About the USA', sos.countryInfo('US'));
@@ -70,21 +72,7 @@ Japan fire number is 119
 US dispatch number is 911
 */
 ```
-**To update the emergency numbers dataset**
-```js
-sos.update() //returns a promise.
-```
-example:
-```js
-const updateDataset = async () => {
-    let results = await sos.update();
-    console.log(results)
-}
 
-// run the updateDataset function every day
-cont dayInMilliseconds = 1000 * 60 * 60 * 24;
-setInterval(function() { updateDataset() }, dayInMilliseconds);
-```
 
 ### Contribute
 Please help us keep the emergency numbers dataset up to date

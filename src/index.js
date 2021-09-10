@@ -1,5 +1,3 @@
-const fs = require('react-native-fs');
-const updater = require('./updater');
 const countriesData = require('../data/country_data.json');
 let numbersData = require('../data/numbers_data.json');
 
@@ -39,13 +37,4 @@ DEPARTEMENTS.forEach((dep) => {
     const numbers = getEmergencyNumbers(ISOCode);
     return numbers[dep];
   };
-});
-
-exports.update = () => new Promise((resolve, reject) => {
-  updater.download('https://raw.githubusercontent.com/Zaydme/sos/master/data/numbers_data.json', '../data/numbers_data.json').catch((err) => {
-    reject(err);
-  }).then(() => {
-    numbersData = JSON.parse(fs.readFileSync('../data/numbers_data.json'));
-    resolve('Successfully updated emergency numbers dataset');
-  });
 });
